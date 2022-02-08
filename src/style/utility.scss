@@ -1,0 +1,14 @@
+@import '@/style/variables.scss';
+
+.button{
+    all:unset;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+.color-gs{
+    background-color: $yellow-orange;
+}
+
+.color-contact{
+    background-color: $science-blue;
+}
