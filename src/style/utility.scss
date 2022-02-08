@@ -1,5 +1,24 @@
 @import '@/style/variables.scss';
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+
+.border-right{
+    border-right: 1px solid;
+}
+
+.pd-ex{
+    padding: 0 15px;
+}
+
 .button{
     all:unset;
     padding: 10px 15px;

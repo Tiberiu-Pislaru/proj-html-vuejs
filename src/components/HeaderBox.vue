@@ -10,25 +10,11 @@
 
                     <nav>
                         <ul>
-                            <li>
-                                Home
+
+                            <li v-for="(dat,index) in data" :key='index'>
+                               <a :href="dat.link">{{dat.name}}</a> 
                             </li>
-                            <li>
-                                Who We Are
-                            </li>
-                            <li>
-                                What We Do
-                            </li>
-                            <li>
-                                Where we work
-                            </li>
-                            <li>
-                                Carrers
-                            </li>
-                            <li>
-                                News
-                            </li>
-                            
+                           
                         </ul>
                     </nav>
                     <button class="button color-gs">
@@ -59,7 +45,9 @@
 
 <script>
 export default {
-    
+    props:{
+        data:Array
+    }
 }
 </script>
 
@@ -91,11 +79,9 @@ header{
                     flex-grow: 1;
                     ul{
                         
-                        display: flex;
-                        text-align:end;
-                        justify-content: space-around;
-                        list-style: none;
-                        width: 100%;
+                        a{
+                            color:$color-white;
+                        }
                     }
                 }
                 
