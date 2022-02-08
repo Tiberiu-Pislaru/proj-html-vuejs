@@ -88,6 +88,7 @@ footer{
     
             .social-network {
                 font-size: 30px;
+                margin: 0 15px;
             }
         }
     }

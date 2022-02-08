@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <header-box :data='headerLinks'/> 
+    <consultation-box/>
     <footer-box :footerLinks='footerLinks' :footSocial='footerSocial'/> 
   </div>
 </template>
@@ -8,12 +9,16 @@
 <script>
 import HeaderBox from "@/components/HeaderBox.vue"
 import FooterBox from "@/components/FooterBox.vue"
+import ConsultationBox from "@/components/ConsultationBox.vue"
+
 
 export default {
   name: 'App',
   components: {
     HeaderBox,
     FooterBox,
+    ConsultationBox
+    
   },
   data(){
     return{
