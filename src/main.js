@@ -13,6 +13,7 @@ import { faDroplet } from '@fortawesome/free-solid-svg-icons'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { faBuilding } from '@fortawesome/free-solid-svg-icons'
 import { faChartColumn } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faTwitter)
 library.add(faTwitter)
@@ -26,6 +27,7 @@ library.add(faDroplet)
 library.add(faGear)
 library.add(faBuilding)
 library.add(faChartColumn)
+library.add(faDollarSign)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

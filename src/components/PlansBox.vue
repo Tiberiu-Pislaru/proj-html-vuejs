@@ -9,19 +9,90 @@
 
             <div class="container-box">
 
+                <div class="box" v-for="num in 4" :key="num">
+                    <card-plan/>
+                </div>
+                <!-- <div class="box">
+
+
+                    <h2>Premium</h2>
+
+                    <div class="price">
+                        <div class="dollar-icon"><font-awesome-icon icon="fa-solid fa-dollar-sign" /></div>
+                        <div class="num">
+                            29<sup>99</sup>
+                            <div class="tag-month">
+                                monthly
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carat">
+                        10 Projects
+                    </div>
+                    <div class="carat">
+                        15 GB Storage
+                    </div>
+                    <div class="carat">
+                        Unlimited Users
+                    </div>
+
+                    <button class="button">START TODAY</button>
+                </div>
                 <div class="box">
 
 
-                    <h2>Standard</h2>
+                    <h2>Professional</h2>
 
                     <div class="price">
-
+                        <div class="dollar-icon"><font-awesome-icon icon="fa-solid fa-dollar-sign" /></div>
+                        <div class="num">
+                            39<sup>99</sup>
+                            <div class="tag-month">
+                                monthly
+                            </div>
+                        </div>
                     </div>
 
-                    <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
+                    <div class="carat">
+                        15 Projects
+                    </div>
+                    <div class="carat">
+                        30 GB Storage
+                    </div>
+                    <div class="carat">
+                        Unlimited Users
+                    </div>
 
-                    <div class="link"><a href="#">Read More </a></div>
+                    <button class="button">START TODAY</button>
                 </div>
+                <div class="box">
+
+
+                    <h2>Extreme</h2>
+
+                    <div class="price">
+                        <div class="dollar-icon"><font-awesome-icon icon="fa-solid fa-dollar-sign" /></div>
+                        <div class="num">
+                            59<sup>99</sup>
+                            <div class="tag-month">
+                                monthly
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carat">
+                        Unlimited Projects
+                    </div>
+                    <div class="carat">
+                        Unlimited Storage
+                    </div>
+                    <div class="carat">
+                        Unlimited Users
+                    </div>
+
+                    <button class="button">START TODAY</button>
+                </div> -->
 
             </div>
         </div>
@@ -29,8 +100,12 @@
 </template>
 
 <script>
+
+import CardPlan from './CardPlan.vue'
 export default {
-    
+    components: {
+        CardPlan,
+    }
 }
 </script>
 
@@ -43,8 +118,6 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: $deep-cove;
-  
 
     .container-service{
         width:$width-container;
@@ -64,24 +137,11 @@ export default {
             margin:60px 0;
             .box{
                 width:calc(100%/4 - 15px);
-                background-color: $color-white;
-                padding: 30px 15px;
                
-                h2{
-                    margin-bottom: 30px ;
-                }
-                p{
-                    line-height:25px
-                }
-                .link {
-                    margin: 15px 0;
-                    a{
-
-                        color: $yellow-orange;
-                    }
-
-                }
+                
             }
+
+            
         }
         .img{
             width: 100%;
