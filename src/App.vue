@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <header-box :data='headerLinks'/> 
+    <main-information/>
     <consultation-box/>
     <footer-box :footerLinks='footerLinks' :footSocial='footerSocial'/> 
   </div>
@@ -10,6 +11,7 @@
 import HeaderBox from "@/components/HeaderBox.vue"
 import FooterBox from "@/components/FooterBox.vue"
 import ConsultationBox from "@/components/ConsultationBox.vue"
+import MainInformation from "@/components/MainInformation.vue"
 
 
 export default {
@@ -17,7 +19,8 @@ export default {
   components: {
     HeaderBox,
     FooterBox,
-    ConsultationBox
+    ConsultationBox,
+    MainInformation
     
   },
   data(){
