@@ -6,18 +6,26 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { faYoutube} from '@fortawesome/free-brands-svg-icons'
+import { faGoogle} from '@fortawesome/free-brands-svg-icons'
 import { faRoad } from '@fortawesome/free-solid-svg-icons'
 import { faVideo } from '@fortawesome/free-solid-svg-icons'
 import { faDroplet } from '@fortawesome/free-solid-svg-icons'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding } from '@fortawesome/free-solid-svg-icons'
+import { faChartColumn } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faTwitter)
 library.add(faTwitter)
 library.add(faFacebookF)
 library.add(faInstagram)
 library.add(faYoutube)
+library.add(faGoogle)
 library.add(faRoad)
 library.add(faVideo)
 library.add(faDroplet)
+library.add(faGear)
+library.add(faBuilding)
+library.add(faChartColumn)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

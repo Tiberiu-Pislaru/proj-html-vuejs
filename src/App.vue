@@ -2,6 +2,9 @@
   <div id="app">
     <header-box :data='headerLinks'/> 
     <main-information/>
+    <service-box/>
+    <our-work-box/>
+    <plans-box/>
     <consultation-box/>
     <footer-box :footerLinks='footerLinks' :footSocial='footerSocial'/> 
   </div>
@@ -12,6 +15,9 @@ import HeaderBox from "@/components/HeaderBox.vue"
 import FooterBox from "@/components/FooterBox.vue"
 import ConsultationBox from "@/components/ConsultationBox.vue"
 import MainInformation from "@/components/MainInformation.vue"
+import ServiceBox from "@/components/ServiceBox.vue"
+import OurWorkBox from './components/OurWorkBox.vue'
+import PlansBox from './components/PlansBox.vue'
 
 
 export default {
@@ -20,8 +26,10 @@ export default {
     HeaderBox,
     FooterBox,
     ConsultationBox,
-    MainInformation
-    
+    MainInformation,
+    ServiceBox,
+    OurWorkBox,
+    PlansBox,
   },
   data(){
     return{
