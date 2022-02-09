@@ -31,6 +31,7 @@ export default {
     methods: {
         showElement(elementIndex) {
             this.currentIndex = elementIndex;
+            console.log(elementIndex)
         }
     }
 }

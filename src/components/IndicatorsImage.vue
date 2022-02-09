@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="indicators">
     <li
       v-for="(el, index) in elements"
       class="dot"
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-ul{
+.indicators{
     display: inline-block;
     .dot {
         height: 20px;
@@ -34,13 +34,13 @@ ul{
         border-radius: 50%;
         background: black;
         opacity: 0.2;
-        cursor: pointer;
         position: relative;
+        display: inline-block;
+        margin: 0 30px;
     }
     
     .dot-selected {
         opacity: 0.7;
-        cursor: default;
     }
     
     .indicator-btn {
