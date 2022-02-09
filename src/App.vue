@@ -6,6 +6,7 @@
     <our-work-box/>
     <plans-box/>
     <news-box/>
+    <customer-box :datiClienti="customerData"/>
     <consultation-box/>
     <footer-box :footerLinks='footerLinks' :footSocial='footerSocial'/> 
   </div>
@@ -20,6 +21,7 @@ import ServiceBox from "@/components/ServiceBox.vue"
 import OurWorkBox from './components/OurWorkBox.vue'
 import PlansBox from './components/PlansBox.vue'
 import NewsBox from './components/NewsBox.vue'
+import CustomerBox from './components/CustomerOpinion.vue'
 
 
 export default {
@@ -32,7 +34,8 @@ export default {
     ServiceBox,
     OurWorkBox,
     PlansBox,
-    NewsBox
+    NewsBox,
+    CustomerBox
   },
   data(){
     return{
@@ -98,6 +101,20 @@ export default {
         'instagram',
         'twitter',
         'youtube',
+      ],
+      customerData:[
+        {
+          image:'/images/testimonials-2.jpg',
+          opinion:'GOOD!!!',
+          name:'Luis Desalvo',
+          startup:'CREO TECH'
+        },
+        {
+          image:'/images/testimonials-1.jpg',
+          opinion:'GOOD!!!',
+          name:'Luisa Desalvo',
+          startup:'CREO TECH'
+        },
       ]
     }
   }
