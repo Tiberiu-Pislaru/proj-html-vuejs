@@ -5,6 +5,7 @@
     <service-box/>
     <our-work-box/>
     <plans-box/>
+    <news-box/>
     <consultation-box/>
     <footer-box :footerLinks='footerLinks' :footSocial='footerSocial'/> 
   </div>
@@ -18,6 +19,7 @@ import MainInformation from "@/components/MainInformation.vue"
 import ServiceBox from "@/components/ServiceBox.vue"
 import OurWorkBox from './components/OurWorkBox.vue'
 import PlansBox from './components/PlansBox.vue'
+import NewsBox from './components/NewsBox.vue'
 
 
 export default {
@@ -30,6 +32,7 @@ export default {
     ServiceBox,
     OurWorkBox,
     PlansBox,
+    NewsBox
   },
   data(){
     return{

@@ -63,6 +63,8 @@
 
 
             </div>
+
+            
         </div>
     </div>
 </template>
@@ -101,7 +103,7 @@ export default {
         .container-box{
             display: flex;
             justify-content:space-around;
-            margin:60px 0;
+            
             .box{
                 width:calc(100%/4 - 15px);
                 background-color: $lucky-point;
