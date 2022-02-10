@@ -9,13 +9,9 @@
                 <div class="top-right">
 
                     <nav>
-                        <ul>
-
-                            <li v-for="(dat,index) in data" :key='index'>
-                               <a :href="dat.link">{{dat.name}}</a> 
-                            </li>
-                           
-                        </ul>
+                        <div v-for="(dat,index) in data" :key='index'>
+                            <nav-bar :data="dat"/>
+                        </div>
                     </nav>
                     <button class="button color-gs">
                         GET IN TOUCH NOW
@@ -44,7 +40,11 @@
 </template>
 
 <script>
+import NavBar from './NavBar.vue'
 export default {
+    components: {
+        NavBar,
+    },
     props:{
         data:Array
     }
@@ -76,13 +76,20 @@ header{
                 nav{
                     display: flex;
                     align-items: center;
+                    justify-content: space-around;
                     flex-grow: 1;
-                    ul{
-                        
-                        a{
-                            color:$color-white;
-                        }
-                    }
+                    // div{
+                    //     display: flex;
+                    //     li{
+
+                    //         a{
+                    //             color:$color-white;
+                    //         }
+                    //     }
+                    //     &:hover a{
+                    //         color:$yellow-orange;
+                    //     }
+                    // }
                 }
                 
                 

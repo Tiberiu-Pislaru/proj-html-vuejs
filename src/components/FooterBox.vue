@@ -8,11 +8,11 @@
             </div>
 
             <div class="links">
-                <ul>
-                    <li v-for="(link,index) in footerLinks" :key="index">
-                        <a :href="link.link">{{link.name}}</a>
-                    </li>
-                </ul>
+                    
+                <div v-for="(dat,index) in footerLinks" :key='index'>
+                    <nav-bar :data="dat"/>
+                </div>
+        
             </div>
 
             <div class="credits">
@@ -47,7 +47,12 @@
 </template>
 
 <script>
+import NavBar from './NavBar.vue'
+
 export default {
+    components: {
+        NavBar,
+    },
     props: {
         footerLinks:Array,
         footSocial:Array,
@@ -55,7 +60,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '@/style/utility.scss';
 @import '@/style/variables.scss';
 
@@ -68,6 +73,8 @@ footer{
         color: $color-black;
         .links {
             margin: 45px 0;
+            display:flex;
+            justify-content: space-between;
             a{
                 color:$color-black;
             }
