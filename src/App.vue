@@ -6,7 +6,7 @@
     <our-work-box/>
     <plans-box/>
     <news-box/>
-    <customer-box :datiClienti="customerData"/>
+    <customer-box :datiClienti="customerData" :imgPartner="clientsPartner"/>
     <consultation-box/>
     <footer-box :footerLinks='footerLinks' :footSocial='footerSocial'/> 
   </div>
@@ -115,6 +115,12 @@ export default {
           name:'Luisa Desalvo',
           startup:'CREO TECH'
         },
+      ],
+      clientsPartner:[
+        '/images/clients_partner_6-200x202.png',
+        '/images/clients_partner_5-200x202.png',
+        '/images/clients_partner_1-200x202.png',
+        '/images/clients_partner_2-200x202.png',
       ]
     }
   }

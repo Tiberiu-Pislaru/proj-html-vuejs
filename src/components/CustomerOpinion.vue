@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container pd-tb">
         <div class="title">
             <h1>
                 What Our Clients Say
@@ -7,6 +7,11 @@
         </div>
         <card-customer :customer="datiClienti[currentIndex]"/>
         <indicators-image @mostra="showElement" :elements="datiClienti" :currentElement="currentIndex" />
+        <div class="container-imgs">
+            <div class="img" v-for="(img,index) in imgPartner" :key="index">
+                <img :src="`${img}`" alt="">
+            </div>
+        </div>
     </div>
 </template>
 
@@ -21,7 +26,8 @@ export default {
         IndicatorsImage,
     },
     props: {
-        datiClienti:Array
+        datiClienti:Array,
+        imgPartner:Array,
     },
     data() {
         return {
@@ -44,5 +50,16 @@ export default {
     width:$width-container;
     margin: 0 auto;
     text-align: center;
+    .container-imgs {
+        display: flex;
+        justify-content: space-around;
+        .img{
+            width: calc(100%/7);
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
 </style>
