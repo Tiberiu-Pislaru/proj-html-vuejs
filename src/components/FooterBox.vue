@@ -3,7 +3,7 @@
 
         <div class="container-footer">
 
-            <div class="logo">
+            <div id="logo">
                 <img src="/images/logo_seo_1x.png" alt="">
             </div>
 

@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <div class="container-top">
-                <div class="logo">
+                <div id="logo">
                     <img src="/images/logo_seo_w_1x.png" alt="">
                 </div>
 
@@ -26,7 +26,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatibus aliquam necessitatibus corporis soluta molestias asperiores minus sint accusantium in suscipit.
                 </p>
-                <div class="buttons">
+                <div id="buttons">
                     <button class=" n-one button color-gs">
                         BUY AVADA NOW
                     </button>

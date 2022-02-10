@@ -1,7 +1,7 @@
 <template>
-    <div class="container-se pd-tb">
+    <div class="container-ne pd-tb">
 
-        <div class="container-service">
+        <div class="container-news">
             <div class="title">
                 <h1>Our News</h1>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudatium.</p>
@@ -73,9 +73,9 @@ export default {
 @import '@/style/utility.scss';
 @import '@/style/variables.scss';
 
-.container-se{  
+.container-ne{  
     background: $concrete;
-    .container-service{
+    .container-news{
         width:$width-container;
         margin: 0 auto;
         text-align: center;
