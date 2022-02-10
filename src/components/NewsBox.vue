@@ -84,7 +84,8 @@ export default {
             margin: 0 auto;
             margin-bottom: 30px;
             p{
-                padding: 0 45px;
+                padding:0 45px;
+                padding-top: 30px;
             }
         }
         .container-box{

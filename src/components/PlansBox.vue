@@ -129,6 +129,7 @@ export default {
             margin-bottom: 30px;
             p{
                 padding: 0 45px;
+                padding-top: 30px;
             }
         }
         .container-box{
@@ -137,8 +138,6 @@ export default {
             margin:60px 0;
             .box{
                 width:calc(100%/4 - 15px);
-               
-                
             }
 
             
