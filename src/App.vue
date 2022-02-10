@@ -4,7 +4,7 @@
     <main-information/>
     <service-box/>
     <our-work-box/>
-    <plans-box/>
+    <plans-box :listPlans="plans"/>
     <news-box/>
     <customer-box :datiClienti="customerData" :imgPartner="clientsPartner"/>
     <consultation-box/>
@@ -121,6 +121,36 @@ export default {
         '/images/clients_partner_5-200x202.png',
         '/images/clients_partner_1-200x202.png',
         '/images/clients_partner_2-200x202.png',
+      ],
+      plans:[
+        {
+          name:'Standard',
+          price:'19',
+          numProjects:'5',
+          storage:'5',
+          users:'Unlimited'
+        },
+        {
+          name:'Premium',
+          price:'29',
+          numProjects:'10',
+          storage:'15',
+          users:'Unlimited'
+        },
+        {
+          name:'Professional',
+          price:'39',
+          numProjects:'15',
+          storage:'30',
+          users:'Unlimited'
+        },
+        {
+          name:'Extreme',
+          price:'59',
+          numProjects:'Unlimited',
+          storage:'Unlimited',
+          users:'Unlimited'
+        },
       ]
     }
   }

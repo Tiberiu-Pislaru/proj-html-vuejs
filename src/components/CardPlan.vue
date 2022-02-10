@@ -2,12 +2,12 @@
     <div class="card">
 
 
-        <h2>Standard</h2>
+        <h2>{{plan.name}}</h2>
 
         <div class="price">
             <div class="dollar-icon"><font-awesome-icon icon="fa-solid fa-dollar-sign" /></div>
             <div class="num">
-                19<sup>99</sup>
+                {{plan.price}}<sup>99</sup>
                 <div class="tag-month">
                     monthly
                 </div>
@@ -15,13 +15,13 @@
         </div>
 
         <div class="carat">
-            5 Projects
+            {{plan.numProjects}} Projects
         </div>
         <div class="carat">
-            5 GB Storage
+            {{plan.storage}} GB Storage
         </div>
         <div class="carat">
-            Unlimited Users
+            {{plan.users}} Users
         </div>
 
         <button class="button">START TODAY</button>
@@ -30,7 +30,9 @@
 
 <script>
 export default {
-    
+    props:{
+        plan:Object,
+    }
 }
 </script>
 

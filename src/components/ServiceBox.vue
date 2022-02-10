@@ -19,7 +19,7 @@
 
                     <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
 
-                    <div class="link"><a href="#">Read More</a></div>
+                    <div class="link"><a href="#">Read More &#9755;</a></div>
                 </div>
 
                 <div class="box">
@@ -32,7 +32,7 @@
 
                     <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
 
-                    <div class="link"><a href="#">Read More</a></div>
+                    <div class="link"><a href="#">Read More &#9755;</a></div>
                 </div>
 
                 <div class="box">
@@ -44,7 +44,7 @@
                     <h2>Local SEO</h2>
 
                     <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
-                    <div class="link"><a href="#">Read More</a></div>
+                    <div class="link"><a href="#">Read More &#9755;</a></div>
 
                 </div>
 
@@ -57,7 +57,7 @@
                     <h2>SEO Analysis</h2>
 
                     <p>Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi ligula euismod odio, vel dictum mi risus a mi.</p>
-                    <div class="link"><a href="#">Read More</a></div>
+                    <div class="link"><a href="#">Read More &#9755;</a></div>
 
                 </div>
 

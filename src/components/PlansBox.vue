@@ -9,8 +9,8 @@
 
             <div class="container-box">
 
-                <div class="box" v-for="num in 4" :key="num">
-                    <card-plan/>
+                <div class="box" v-for="(plan, num) in listPlans" :key="num">
+                    <card-plan :plan="plan"/>
                 </div>
                 <!-- <div class="box">
 
@@ -105,6 +105,9 @@ import CardPlan from './CardPlan.vue'
 export default {
     components: {
         CardPlan,
+    },
+    props:{
+        listPlans:Array
     }
 }
 </script>
