@@ -58,7 +58,8 @@ export default {
         },
         {
           name:'Carrers',
-          link:'#'
+          link:'#',
+          open:true
         },
         {
           name:'News',
