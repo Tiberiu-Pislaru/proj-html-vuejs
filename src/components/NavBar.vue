@@ -25,6 +25,7 @@ export default {
     align-items: center;
     a{
         color:$color-white;
+        transition: all .3s;
     }
     &:hover a{
         color:$yellow-orange;
