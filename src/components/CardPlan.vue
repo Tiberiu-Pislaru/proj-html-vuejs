@@ -73,9 +73,10 @@ export default {
     }
     .button{
         border: 2px solid grey;
-    }
-    &:hover .button{
-        background-color: $yellow-orange;
+        &:hover{
+            background-color: $yellow-orange;
+            border-color:transparent;
+        }
     }
 }
 
