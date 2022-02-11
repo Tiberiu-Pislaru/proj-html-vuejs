@@ -8,7 +8,7 @@
     >
       <button
         class="indicator-btn"
-        @click="$emit('mostra',index)"
+        @click="$emit('show',index)"
         :disabled=" currentElement === index"
       />
     </li>

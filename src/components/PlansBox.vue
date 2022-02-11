@@ -9,7 +9,7 @@
 
             <div class="container-box">
 
-                <div class="box" v-for="(plan, num) in listPlans" :key="num">
+                <div class="box" v-for="(plan, num) in plans" :key="num">
                     <card-plan :plan="plan"/>
                 </div>
 
@@ -26,7 +26,7 @@ export default {
         CardPlan,
     },
     props:{
-        listPlans:Array
+        plans:Array
     }
 }
 </script>

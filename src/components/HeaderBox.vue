@@ -9,8 +9,8 @@
                 <div class="top-right">
 
                     <nav>
-                        <div v-for="(dat,index) in data" :key='index'>
-                            <nav-bar :data="dat"/>
+                        <div v-for="(link,index) in links" :key='index'>
+                            <nav-bar :link="link"/>
                         </div>
                     </nav>
                     <button class="button color-gs">
@@ -46,7 +46,7 @@ export default {
         NavBar,
     },
     props:{
-        data:Array
+        links:Array
     }
 }
 </script>

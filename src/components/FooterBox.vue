@@ -9,8 +9,8 @@
 
             <div class="links">
                     
-                <div v-for="(dat,index) in footerLinks" :key='index'>
-                    <nav-bar :data="dat"/>
+                <div v-for="(link,index) in footerLinks" :key='index'>
+                    <nav-bar :link="link"/>
                 </div>
         
             </div>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="social">
-                <span class="social-network" v-for="social in footSocial" :key="social"><font-awesome-icon :icon="['fab', social]"/></span>
+                <span class="social-network" v-for="social in footerSocial" :key="social"><font-awesome-icon :icon="['fab', social]"/></span>
             </div>
 
         </div>
@@ -55,7 +55,7 @@ export default {
     },
     props: {
         footerLinks:Array,
-        footSocial:Array,
+        footerSocial:Array,
     }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
 
     <div class="link">
-        <a :href="data.link">{{data.name}}</a>
-        <div class="apply" v-if="data.open !== undefined && data.open!==false"> Apply</div>
+        <a :href="link.link">{{link.name}}</a>
+        <div class="apply" v-if="link.open !== undefined && link.open!==false"> Apply</div>
     </div>
     
 </template>
@@ -10,7 +10,7 @@
 <script>
 export default {
     props:{
-        data:Object,
+        link:Object,
     }
 }
 </script>

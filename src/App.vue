@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <header-box :data='headerLinks'/> 
-    <main-information/>
+    <header-box :links='headerLinks'/> 
+    <main-information-box/>
     <service-box/>
     <our-work-box/>
-    <plans-box :listPlans="plans"/>
+    <plans-box :plans="listPlans"/>
     <news-box/>
-    <customer-box :datiClienti="customerData" :imgPartner="clientsPartner"/>
+    <customer-box :customerData="customerData" :imgPartner="clientsPartner"/>
     <consultation-box/>
-    <footer-box :footerLinks='footerLinks' :footSocial='footerSocial'/> 
+    <footer-box :footerLinks='footerLinks' :footerSocial='footerSocial'/> 
   </div>
 </template>
 
@@ -16,12 +16,12 @@
 import HeaderBox from "@/components/HeaderBox.vue"
 import FooterBox from "@/components/FooterBox.vue"
 import ConsultationBox from "@/components/ConsultationBox.vue"
-import MainInformation from "@/components/MainInformation.vue"
+import MainInformationBox from "@/components/MainInformationBox.vue"
 import ServiceBox from "@/components/ServiceBox.vue"
 import OurWorkBox from './components/OurWorkBox.vue'
 import PlansBox from './components/PlansBox.vue'
 import NewsBox from './components/NewsBox.vue'
-import CustomerBox from './components/CustomerOpinion.vue'
+import CustomerBox from './components/CustomerBox.vue'
 
 
 export default {
@@ -30,7 +30,7 @@ export default {
     HeaderBox,
     FooterBox,
     ConsultationBox,
-    MainInformation,
+    MainInformationBox,
     ServiceBox,
     OurWorkBox,
     PlansBox,
@@ -66,7 +66,6 @@ export default {
           link:'#'
         }
       ],
-
       footerLinks:[
         {
           name:'Home',
@@ -123,7 +122,7 @@ export default {
         '/images/clients_partner_1-200x202.png',
         '/images/clients_partner_2-200x202.png',
       ],
-      plans:[
+      listPlans:[
         {
           name:'Standard',
           price:'19',

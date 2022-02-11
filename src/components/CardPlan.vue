@@ -1,7 +1,6 @@
 <template>
     <div class="card">
 
-
         <h2>{{plan.name}}</h2>
 
         <div class="price">

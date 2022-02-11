@@ -5,8 +5,8 @@
                 What Our Clients Say
             </h1>
         </div>
-        <card-customer :customer="datiClienti[currentIndex]"/>
-        <indicators-image @mostra="showElement" :elements="datiClienti" :currentElement="currentIndex" />
+        <card-customer :customer="customerData[currentIndex]"/>
+        <indicators-image @show="showElement" :elements="customerData" :currentElement="currentIndex" />
         <div class="container-imgs">
             <div class="img" v-for="(img,index) in imgPartner" :key="index">
                 <img :src="`${img}`" alt="">
@@ -26,7 +26,7 @@ export default {
         IndicatorsImage,
     },
     props: {
-        datiClienti:Array,
+        customerData:Array,
         imgPartner:Array,
     },
     data() {
@@ -37,7 +37,6 @@ export default {
     methods: {
         showElement(elementIndex) {
             this.currentIndex = elementIndex;
-            console.log(elementIndex)
         }
     }
 }
